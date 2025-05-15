@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hugging Face Pop - Support</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 720px;
+      margin: auto;
+      padding: 2rem;
+      background-color: #f7f7f7;
+    }
+    h1 {
+      color: #333;
+    }
+    .lang-switch {
+      margin-bottom: 1.5rem;
+    }
+    .section {
+      display: none;
+    }
+    .section.active {
+      display: block;
+    }
+    a {
+      color: #007aff;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hugging Face Pop - Support</h1>
+
+  <div class="lang-switch">
+    🌐 Language: 
+    <button onclick="showLang('en')">English</button>
+    <button onclick="showLang('ja')">日本語</button>
+  </div>
+
+  <!-- English Section -->
+  <div id="en" class="section active">
+    <p>Welcome to the official support page for <strong>Hugging Face Pop</strong>.</p>
+    <p>If you have any issues or feedback, feel free to contact us:</p>
+    <p><strong>Email:</strong> <a href="mailto:info@swiftwind11.net">info@swiftwind11.net</a></p>
+    <p><a href="https://example.com/privacy">Read our Privacy Policy</a></p>
+  </div>
+
+  <!-- Japanese Section -->
+  <div id="ja" class="section">
+    <p><strong>Hugging Face Pop</strong> の公式サポートページです。</p>
+    <p>ご質問やご意見がありましたら、以下のメールアドレスまでご連絡ください：</p>
+    <p><strong>メール：</strong> <a href="mailto:info@swiftwind11.net">info@swiftwind11.net</a></p>
+    <p><a href="https://swiftwind11.github.io/HuggingPop/index.html">プライバシーポリシーを読む</a></p>
+  </div>
+
+  <script>
+    function showLang(lang) {
+      document.querySelectorAll(".section").forEach(sec => sec.classList.remove("active"));
+      document.getElementById(lang).classList.add("active");
+    }
+  </script>
+</body>
+</html>
